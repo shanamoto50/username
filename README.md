@@ -7,7 +7,7 @@
 - **Date:** 20 Jan 2026
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain the problem it solves and how it works at a high level.]
+This script checks whether usernames follow a specific set of rules correct characters, correct starting letter, and correct length and tells you if each username is valid or invalid. Its purpose is to quickly catch bad usernames before they get used in a system or saved to a file. It works by reading usernames either from user input or from piped/file input and comparing each one to a regular expression pattern.
 
 ## Username Requirements
 This script validates usernames according to the following rules:
@@ -27,7 +27,7 @@ To test with the provided input file:
 ```
 
 ## How the Script Works
-[Explain in 3-5 sentences how your script validates usernames. Include information about:]
+My script validates usernames by checking them against a regular expression stored in USERNAME_Rules. The regex requires the username to start with a lowercase letter, and then only allows lowercase letters, numbers, or underscores after that. It also enforces a length of 3–12 characters total by limiting how many characters can come after the first letter. If the username matches the rules, the script prints that it is valid otherwise it prints that it is invalid.
 - The use of the `while` loop
 - The `grep` command with extended regular expressions
 - The meaning of the `-E` and `-v` flags
@@ -44,16 +44,35 @@ This pattern ensures that:
 - The total length is between 3 and 12 characters
 
 ## Testing Results
-[Describe your testing process and results. Include:]
-- Example valid usernames you tested (at least two)
-- Example invalid usernames and why they fail (at least two)
-- How you used the username-input file to test
+js - Invalid username
+jsmith - Valid username
+j - Invalid username
+smith - Valid username
+jsmith123 - Valid username
+jsmith12345678 - Invalid username
+jSmith - Invalid username
+jsmith! - Invalid username
+jsmith_2023 - Valid username
+dev_user - Valid username
+test123 - Valid username
+admin - Valid username
+user - Valid username
+a - Invalid username
+ab - Invalid username
+john_doe - Valid username
+user123456 - Valid username
+test-user - Invalid username
+TEST123 - Invalid username
+testuser12345678 - Invalid username
+_ - Invalid username
+__test - Invalid username
+123abc - Invalid username
 
 ## Challenges and Solutions
-[Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding regular expressions, or Git workflow problems.]
+
 
 ## Resources
-[List any resources you used (class slides, ChatGPT, etc.). Please refer to the course syllabus for more details on citations.]
+ChatGPT to help a syntax error I got stuck on
 
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.

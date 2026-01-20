@@ -1,10 +1,10 @@
 # README for Username Validation Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- **Name:** Shandon Hanamoto
+- **Course:** CPSC 298 
 - **Assignment:** Username Validation
-- **Date:** [Date of Completion]
+- **Date:** 20 Jan 2026
 
 ## Program Description
 [Write 2-3 sentences in your own words describing what this script does and its purpose. Explain the problem it solves and how it works at a high level.]
